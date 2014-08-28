@@ -2,12 +2,21 @@
 
 using namespace std;
 
+int inputFunction(int inputNum)
+{
+	if (inputNum == 0){
+		return 0;
+	} else {
+		cout << "Hello" << endl;
+		return inputFunction(--inputNum);
+	}
+}
+
+
 int main()
 {
 	int testNum;
 	cin >> testNum;
-	while(testNum--){
-		cout << "Hello" << endl;
-	}
+	inputFunction(testNum);
 	return 0;
 }
