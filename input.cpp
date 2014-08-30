@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int inputFunction(int inputNum)
+template <class T>
+T inputFunction(T inputNum)
 {
 	if (inputNum == 0){
 		return 0;
