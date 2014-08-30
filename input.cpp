@@ -8,7 +8,7 @@ T inputFunction(T inputNum)
 	if (inputNum == 0){
 		return 0;
 	} else {
-		cout << "Hello" << endl;
+		cout << "Hello, this will repeat " << inputNum <<" times."<< endl;
 		return inputFunction(--inputNum);
 	}
 }
